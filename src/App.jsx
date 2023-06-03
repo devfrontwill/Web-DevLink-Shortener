@@ -1,12 +1,10 @@
 import React from "react"
-import Home from "./pages/Home";
-import Links from "./pages/Links";
+import RoutesApp from "./routes";
 
 function App(){
   return(
     <div>
-      <Home />
-      <Links />
+      <RoutesApp />
     </div>
   )
 }

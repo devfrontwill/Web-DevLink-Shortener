@@ -1,9 +1,36 @@
-import styles from './styles.module.scss';
+import { FiArrowLeft, FiLink, FiTrash } from 'react-icons/fi';
+import { Link } from 'react-router-dom';
+import './styles.scss';
 
-function Links(){
-    return(
-        <div>
-            <h2> Pagina Links</h2>
+function Links() {
+    return (
+        <div className='links_container' >
+            <div className='links-header' >
+                <Link to="/">
+                    <FiArrowLeft size={38} color='#FFF' />
+                </Link>
+                <h1>Meus Links</h1>
+            </div>
+
+            <div className="links-item">
+                <button className='link'>
+                    <FiLink size={18} color='#FFF' />
+                    https://linkedin.com/in/devfrontwill
+                </button>
+                <button className='link-delete' >
+                    <FiTrash size={24} color='#FF5454' />
+                </button>
+            </div>
+
+            <div className="links-item">
+                <button className='link'>
+                    <FiLink size={18} color='#FFF' />
+                    https://linkedin.com/in/devfrontwill
+                </button>
+                <button className='link-delete' >
+                    <FiTrash size={24} color='#FF5454' />
+                </button>
+            </div>
         </div>
     )
 }

@@ -17,6 +17,7 @@
     "react-icons": "^4.9.0",
     "react-router-dom": "^6.11.2",
     "sass": "^1.62.1",
+    "scss": "^0.2.4",
     "sort-by": "^1.2.0"
   },
   "devDependencies": {
