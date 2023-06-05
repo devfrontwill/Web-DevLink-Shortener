@@ -5,11 +5,15 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background-color: rgb(2, 2, 26);
+    
 }
 
 .container_error img {
+    border-radius: 60%;
     max-width: 300px;
     margin: 24px 0;
+    
     animation: shake 1.7s;
 }
 
