@@ -1,15 +1,29 @@
 import { FiLink } from 'react-icons/fi';
 import { useState } from 'react';
+import './styles.scss';
 import Menu from '../../components/Menu';
 import ModalLink from '../../components/ModalLink';
-import './styles.scss';
+import api from '../../services/api';
 
 function Home() {
-    const [link,setLink] = useState('');
+    const [link, setLink] = useState('');
+    const [data, setData] = useState({});
     const [showModal, setShowModal] = useState(false);
 
-    function shortLink(){
-        setShowModal(true);
+    async function shortLink() {
+        try {
+            const response = await api.post('/shorten', {
+                long_url: link
+            })
+
+            setData(response.data);
+            setShowModal(true);
+            setLink('');
+            
+        } catch {
+            alert("ops algo deu errado")
+            setLink('');
+        }
     }
 
     return (
@@ -27,18 +41,19 @@ function Home() {
                     <input
                         placeholder='Insira o seu link aqui. . .'
                         value={link}
-                        onChange={ (e) => setLink(e.target.value) }
+                        onChange={(e) => setLink(e.target.value)}
                     />
                 </div>
                 <button onClick={shortLink} > Encurtar Link</button>
             </div>
-            <Menu/>
+            <Menu />
 
-            { showModal && (
+            {showModal && (
                 <ModalLink
-                closeModal={() => setShowModal(false) }
+                    closeModal={() => setShowModal(false)}
+                    content={data}
                 />
-            ) }
+            )}
         </div>
     )
 }

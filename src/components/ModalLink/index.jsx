@@ -1,7 +1,13 @@
 import './styles.scss';
 import { FiX, FiClipboard } from 'react-icons/fi';
 
-function ModalLink({ closeModal }){
+function ModalLink ({ closeModal, content }) {
+
+    async function copyLink(){
+        await navigator.clipboard.writeText(content.link)
+        alert("URL Copiada com sucesso");
+    }
+
     return(
         <div className='modal_container'>
 
@@ -13,11 +19,11 @@ function ModalLink({ closeModal }){
             </div>
 
             <span>
-                https://github.com/devfrontwill
+                {content.long_url}
             </span>
 
-            <button className='modal_link' >
-                https://bit.ly/3303
+            <button className='modal_link' onClick={copyLink} >
+                {content.link}
                 <FiClipboard size={20} color='#FFF' />
             </button>
         
