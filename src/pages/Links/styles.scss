@@ -24,14 +24,22 @@ body {
     }
 }
 
-
-.links-item {
+.links_item {
     width: 700px;
     display: flex;
     align-items: center;
     flex-direction: row;
     margin-top: 8px;
     margin-bottom: 18px;
+
+    .empty_text{
+        width: 100%;
+        text-align: center;
+        color: #FFF;
+        margin-top: 28px;
+        font-size: 20px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
 }
 
 .link {
@@ -60,6 +68,8 @@ body {
     background: transparent;
 }
 
+
+
 @media (max-width: 715px) {
     .links_container {
         width: 90%;
@@ -69,7 +79,7 @@ body {
         font-size: 40px;
     }
 
-    .links-item {
+    .links_item {
         width: 100%;
     }
 
