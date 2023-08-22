@@ -1,4 +1,3 @@
-
 </h4>
 <p align="center">
  <a href="#-sobre-o-projeto">Sobre</a> •
@@ -13,6 +12,19 @@
 ## 💻 Sobre o projeto
 
 🚀 DevLink Shortener é uma aplicação desenvolvida para que o usuário possa obter links encurtados com o objetivo de facilitar o uso de links extensos, seja para mostrar em um perfil de rede social ou afins. É uma aplicação dinâmica, que possui uma página inicial onde o usuário pode digitar ou colar o seu link que deseja encurtar, feito isso todo link encurtado é automaticamente armazenado na seção "meus links" onde o usuário consegue consultar a lista de links encurtados que ali ficam salvos, também é possivel deletar os links encurtados salvos que não forem mas utilizados. Foi utilizado a API do bit.ly, porém por ser FREE tem um baixo limite quantitativo para encurtamento de links. Dito isto, deixarei alguns prints da aplicação em funcionamento.
+
+### Página inicial :point_down:
+![webdevlink](https://github.com/devfrontwill/devlink-shortener/assets/106280899/200368c9-0d6c-4f93-85de-64c7ff221c62)
+### Link encurtado com URL já copiada :point_down:
+![webdevlink-2](https://github.com/devfrontwill/devlink-shortener/assets/106280899/f3657295-7047-4231-af94-2f40c6d19ca6)
+### Página de Meus links salvos :point_down:
+![webdevlink-3](https://github.com/devfrontwill/devlink-shortener/assets/106280899/e8820445-283c-4f21-a063-748b7a4b4918)
+### Copiando link já salvo na página Meus Links :point_down:
+![webdevlink-4](https://github.com/devfrontwill/devlink-shortener/assets/106280899/09ab98e3-3447-44b3-a6e4-37a296fbce3b)
+### Página de erro :point_down:
+![webdevlink-error](https://github.com/devfrontwill/devlink-shortener/assets/106280899/10451b61-190f-450e-a305-275ee7c2e48b)
+
+
 
 ---
 
@@ -54,7 +66,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 ## 🦸 Autor
 
 <a href="https://www.instagram.com/wiliam.rozza/">
- <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/106280899?s=400&u=c99561d67e121d4546768802a0b8e93491c9775a&v=4" width="100px;" alt="Homem negro, cabelos curtos e encaracolados, nariz largo e com um sorriso no rosto. Está usando um Headset vermelho e preto. O cenário é uma parede lisa atrás com um fundo azul."/>
+ <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/106280899?s=400&u=c99561d67e121d4546768802a0b8e93491c9775a&v=4" width="100px;" alt="Homem negro, cabelos curtos, nariz largo."/>
  <br />
  <sub><b>Wiliam Roza</b></sub></a> <a href="https://www.linkedin.com/in/devfrontwill/" title="Meu Perfil">🚀</a>
  <br />
